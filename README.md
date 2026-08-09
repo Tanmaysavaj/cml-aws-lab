@@ -403,6 +403,14 @@ This is intentional.
 The first execution should only initialize, validate, format, and generate the Terraform plan.
 
 ---
+# AWS Cost Protection
+
+This project creates an AWS monthly cost budget.
+
+The default budget is:
+
+```text
+$80 USD / month
 
 # 13. Make the Script Executable
 
