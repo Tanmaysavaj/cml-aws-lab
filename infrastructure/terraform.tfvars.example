@@ -1,0 +1,18 @@
+aws_region   = "ca-central-1"
+
+project_name = "cml-aws-lab"
+environment  = "lab"
+
+vpc_cidr           = "10.0.0.0/16"
+public_subnet_cidr = "10.0.1.0/24"
+
+instance_type     = "c8i.8xlarge"
+root_volume_size  = 200
+
+# Replace with the public IP that should be allowed
+# to access the CML server.
+#
+# Example:
+# allowed_management_cidr = "203.0.113.10/32"
+
+allowed_management_cidr = "YOUR_PUBLIC_IP/32"
