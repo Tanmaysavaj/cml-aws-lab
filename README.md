@@ -333,7 +333,6 @@ allowed_management_cidr = "203.0.113.25/32"
 
 The `/32` restricts access to that single IPv4 address.
 
-> Do not commit `terraform.tfvars` to Git. It is intentionally excluded by `.gitignore`.
 
 ---
 
