@@ -22,3 +22,27 @@ output "budget_email" {
   description = "Email address configured for budget alerts"
   value       = var.budget_email
 }
+output "vpc_id" {
+  description = "ID of the CML VPC"
+  value       = aws_vpc.cml.id
+}
+
+output "vpc_cidr" {
+  description = "CIDR block of the CML VPC"
+  value       = aws_vpc.cml.cidr_block
+}
+
+output "public_subnet_id" {
+  description = "ID of the public subnet"
+  value       = aws_subnet.public.id
+}
+
+output "public_subnet_cidr" {
+  description = "CIDR block of the public subnet"
+  value       = aws_subnet.public.cidr_block
+}
+
+output "internet_gateway_id" {
+  description = "ID of the Internet Gateway"
+  value       = aws_internet_gateway.cml.id
+}
