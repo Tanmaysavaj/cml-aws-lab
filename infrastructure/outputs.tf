@@ -12,3 +12,13 @@ output "availability_zones" {
   description = "Available availability zones"
   value       = data.aws_availability_zones.available.names
 }
+
+output "monthly_budget" {
+  description = "Configured monthly AWS budget in USD"
+  value       = aws_budgets_budget.monthly.limit_amount
+}
+
+output "budget_email" {
+  description = "Email address configured for budget alerts"
+  value       = var.budget_email
+}
