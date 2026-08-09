@@ -20,3 +20,4 @@ allowed_management_cidr = "YOUR_PUBLIC_IP/32"
 monthly_budget_usd = 80
 
 budget_email = "YOUR_EMAIL@example.com"
+allowed_management_cidr = "X.X.X.X/32"

@@ -46,3 +46,7 @@ output "internet_gateway_id" {
   description = "ID of the Internet Gateway"
   value       = aws_internet_gateway.cml.id
 }
+output "security_group_id" {
+  description = "Security group ID for the CML instance"
+  value       = aws_security_group.cml.id
+}
