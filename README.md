@@ -403,6 +403,7 @@ This is intentional.
 The first execution should only initialize, validate, format, and generate the Terraform plan.
 
 ---
+
 # AWS Cost Protection
 
 This project creates an AWS monthly cost budget.
