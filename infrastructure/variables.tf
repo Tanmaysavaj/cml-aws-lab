@@ -69,3 +69,12 @@ variable "budget_email" {
     error_message = "budget_email must be a valid email address."
   }
 }
+variable "ssh_public_key" {
+  description = "SSH public key used to access the CML host"
+  type        = string
+
+  validation {
+    condition     = length(trimspace(var.ssh_public_key)) > 0
+    error_message = "ssh_public_key must not be empty."
+  }
+}

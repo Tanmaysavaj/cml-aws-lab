@@ -50,3 +50,27 @@ output "security_group_id" {
   description = "Security group ID for the CML instance"
   value       = aws_security_group.cml.id
 }
+output "cml_instance_id" {
+  description = "EC2 instance ID for the CML host"
+  value       = aws_instance.cml.id
+}
+
+output "cml_instance_type" {
+  description = "EC2 instance type"
+  value       = aws_instance.cml.instance_type
+}
+
+output "cml_private_ip" {
+  description = "Private IP address of the CML host"
+  value       = aws_instance.cml.private_ip
+}
+
+output "cml_public_ip" {
+  description = "Public IP address of the CML host"
+  value       = aws_instance.cml.public_ip
+}
+
+output "cml_ssh_command" {
+  description = "SSH command for the CML host"
+  value       = "ssh ubuntu@${aws_instance.cml.public_ip}"
+}

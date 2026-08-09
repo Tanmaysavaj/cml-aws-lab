@@ -21,3 +21,5 @@ monthly_budget_usd = 80
 
 budget_email = "YOUR_EMAIL@example.com"
 allowed_management_cidr = "X.X.X.X/32"
+ssh_public_key = "ssh-ed25519 AAAA... user@computer"
+# ssh-keygen -t ed25519 -C "cml-aws-lab"
