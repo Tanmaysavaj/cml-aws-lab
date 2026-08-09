@@ -49,3 +49,23 @@ variable "allowed_management_cidr" {
     error_message = "allowed_management_cidr must be a valid IPv4 CIDR, for example 203.0.113.10/32."
   }
 }
+variable "monthly_budget_usd" {
+  description = "Monthly AWS cost budget in USD"
+  type        = number
+  default     = 80
+
+  validation {
+    condition     = var.monthly_budget_usd >= 80
+    error_message = "monthly_budget_usd must be at least 80 USD."
+  }
+}
+
+variable "budget_email" {
+  description = "Email address that receives AWS budget alerts"
+  type        = string
+
+  validation {
+    condition     = can(regex("^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$", var.budget_email))
+    error_message = "budget_email must be a valid email address."
+  }
+}
