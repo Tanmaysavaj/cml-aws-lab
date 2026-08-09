@@ -1,0 +1,37 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+
+# Terraform variable files
+*.tfvars
+*.tfvars.json
+!terraform.tfvars.example
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+
+# AWS
+.aws/
+
+# CML
+cml/images/
+*.pkg
+*.iso
+*.qcow2
+*.qcow
+*.img
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
